@@ -1,0 +1,55 @@
+<md-dialog>
+    <form ng-cloak>
+ 
+        <!-- dialog box title -->
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Read One Product</h2>
+            </div>
+        </md-toolbar>
+ 
+        <md-dialog-content>
+            <div class="md-dialog-content">
+ 
+               <!-- we are using ng-model to bind this view and the 'Employee model -->
+               <md-input-container class="md-block">
+                <label>First Name</label>
+                <input ng-model="FirstName">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Last Name</label>
+                <input ng-model="LastName">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Address</label>
+                <input ng-model="Address">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Email</label>
+                <input ng-model="Email">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Phone Number</label>
+                <input ng-model="PhoneNumber">
+            </md-input-container>
+            
+            <md-input-container class="md-block">
+                <label>Department</label>
+                <md-select ng-model="DepartmentId">
+                    <md-option ng-value="Department.DepartmentId" ng-repeat="Department in Departments">{{ Department.Name }}</md-option>
+                </md-select>
+            </md-input-container>
+ 
+            </div>
+        </md-dialog-content>
+ 
+        <!-- button to close the dialog box -->
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">Cancel</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

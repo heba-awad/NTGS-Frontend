@@ -1,0 +1,16 @@
+{
+  "name": "example-angularjs-crud-master",
+  "version": "1.0.0",
+  "description": "AngularJS CRUD Example with Material Design – Step by Step Guide! ===",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
+}
